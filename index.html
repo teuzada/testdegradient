@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,44 +9,72 @@
       @charset "UTF-8";
 
       *{
-        font-family: arial,helvectica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
       }
 
-      body{
-        backgroud-image: linear-gradient(to right, #115D8C, #0B3B59, #9498F2);
-      }
+     body{
+     background: linear-gradient(to right, #f8e8d4, #f5d6ba);
+     }
 
-        header{
-            background:linear-gradient(to right, #115D8C, #0B3B59, #9498F2);
-            padding:20px;
-            text-aling: center;
+    header {
+            background: linear-gradient(to right, #d4a373, #b87c4a);
+            padding: 20px;
+            text-align: center;
             font-size: 24px;
             font-weight: bold;
             color: white;
-        }       
-        main{
-            margin: auto;
-            background-color: white;
-            border-radius: 10px;
-            widht: 600px;
-            padding: 1-px;
-            box-shadow: 5px 5px 15px 2px rgba(136, 109, 93, 0.616);
         }
+    .container{
+        display:flex;
+        flex-wrap: wrap;
+        font-size: 24px;
+        font-weight: bold;
+        color:white;
+    }    
+
+    .produto{
+        background: linear-gradient(to right, #d4a373, #b87c4a);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin:10px;
+        padding: 15px;
+        text-align: center;
+        width: 250px;
+    }
+
+    .botao{
+        background: linear-gradient(to right, #6d4c41, #8d6e63);
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    .botao:hover{
+        background: linear-gradient(to right, #8d6e63, #a1887f);
+    }
+         
     </style>
 </head>
 <body>
-    <header>Loja de delicias</header>
-    <main>
-    <h1>Veja meus produtos</h1>
-    <div class="produtos">
-    <h2>Bolo de pote</h2>
-       <p>Paragrafo 1</p>
-       <p>Paragrafo 2</p>
+    <header>Loja de Delícias</header>
 
-    <h2>Palha italiana</h2>
-       <p>Paragrafo 1</p>
-       <P>Paragrafo 2</P>
+    <div class="container">
+      
+    <h3>Veja meus produtos</h1>
+    <div class="produto">
+    <h3>Bolo de pote</h2>
+        <img src="" alt="bolo de pote">
+        <p>parágrafo 1</p>
+        <button class="botao">Comprar</button>
     </div>
-    </main>
+    <div class="produto">    
+    <h3>palha italiana</h2>
+        <img src="" alt="palha italiana">
+        <p>parágrafo 1</p>
+        <button class="botao">Comprar</button>
+    </div>
+       </div>      
 </body>
 </html>
